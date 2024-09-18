@@ -153,10 +153,12 @@
   top: 30%;
   left: 40%;
   display: flex;
-  justify-content: center;
+  max-height: 400px;
+  overflow-y: scroll;
 }
 .customer-says-card {
   width: 400px;
+  height: 400px;
   padding: 30px;
 }
 .customer-says-card p {
@@ -309,4 +311,66 @@
     top: 7px;
   }
 
+}
+@media (max-width:768px){
+  .customer-says {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    overflow-y: auto;
+    gap: 10px;
+  }
+  .customer-says-card {
+    width: 350px;
+    height: 400px;
+    padding: 30px;
+  }
+  
+}
+@media (max-width:480px){
+  .customer-says {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    overflow-y: auto;
+    gap: 10px;
+  }
+  .customer-says-card {
+    width: 220px;
+    height: 500px;
+    padding: 30px;
+  }
+  .customer-says-card p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 40px;
+  }
+  .profile {
+    position: relative;
+  }
+  .profile img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .profile h3 {
+    font-size: 15px;
+    color: white;
+    margin-left: 100px;
+  }
+  .profile p {
+    font-size: 12px;
+    color: rgba(146, 146, 146, 1);
+    margin-left: 100px;
+  }
+  
 }
